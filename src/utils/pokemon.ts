@@ -97,3 +97,14 @@ export const getGenerationFromId = (id: number): string => {
 export const getOfficialArtworkUrl = (id: number | string): string => {
   return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`;
 };
+
+export const formatHeightImperial = (decimeters: number): string => {
+  const totalInches = Math.round((decimeters * 10) / 2.54);
+  const feet = Math.floor(totalInches / 12);
+  const inches = totalInches % 12;
+  return `${feet}'${String(inches).padStart(2, '0')}"`;
+};
+
+export const formatWeightLbs = (hectograms: number): string => {
+  return `${((hectograms / 10) * 2.20462).toFixed(1)} lbs`;
+};

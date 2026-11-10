@@ -14,6 +14,8 @@ import {
   TYPE_TRANSLATIONS,
   TYPE_COLORS,
   getPokemonIdFromUrl,
+  formatHeightImperial,
+  formatWeightLbs,
 } from '../utils/pokemon';
 
 const COLOR_TRANSLATIONS: Record<string, string> = {

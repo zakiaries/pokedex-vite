@@ -6,8 +6,18 @@ import { formatPokemonId, getGenerationRange, getPokemonIdFromUrl } from '../uti
 export const useFilteredPokemon = () => {
   const filters = usePokedexStore((state) => state.filters);
 
-  const { data: allPokemon, isLoading: loadingAll, isError, refetch } = useAllPokemonQuery();
-  const { data: namesByType, isLoading: loadingByType } = usePokemonByTypeQuery(filters.type);
+  const {
+    data: allPokemon,
+    isLoading: loadingAll,
+    isError: errorAll,
+    refetch: refetchAll,
+  } = useAllPokemonQuery();
+  const {
+    data: namesByType,
+    isLoading: loadingByType,
+    isError: errorByType,
+    refetch: refetchByType,
+  } = usePokemonByTypeQuery(filters.type);
 
   const filteredPokemon = useMemo(() => {
     let result = allPokemon?.results ?? [];
@@ -49,10 +59,15 @@ export const useFilteredPokemon = () => {
     });
   }, [allPokemon, namesByType, filters]);
 
+  const refetch = () => {
+    refetchAll();
+    if (filters.type) refetchByType();
+  };
+
   return {
     filteredPokemon,
     isLoading: loadingAll || (!!filters.type && loadingByType),
-    isError,
+    isError: errorAll || errorByType,
     refetch,
   };
 };
