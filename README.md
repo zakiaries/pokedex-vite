@@ -6,19 +6,23 @@ Aplikasi web Pokédex untuk Frontend Technical Assessment. Data diambil dari [Po
 
 **Home**
 
-<img width="1896" height="954" alt="image" src="https://github.com/user-attachments/assets/cd5b10a0-81f7-4f3f-ab50-840a8df1207c" />
+<img width="1892" height="957" alt="image" src="https://github.com/user-attachments/assets/60516d30-0710-46f9-b06e-923f39c75e73" />
+
 
 **Detail**
 
-<img width="1893" height="958" alt="image" src="https://github.com/user-attachments/assets/efd2ab25-62f1-4d3a-9ef7-23b1c1acef5e" />
+<img width="1703" height="957" alt="image" src="https://github.com/user-attachments/assets/be6258a1-48aa-4dfb-a02e-a82d34583a50" />
+
 
 **Favorites**
 
-<img width="1910" height="962" alt="image" src="https://github.com/user-attachments/assets/59f13ff7-7242-4801-b848-71652e5399f8" />
+<img width="1904" height="956" alt="image" src="https://github.com/user-attachments/assets/064bd236-7edb-468e-98b2-e303b9661c3d" />
+
 
 **Mobile**
 
-<img width="396" height="863" alt="image" src="https://github.com/user-attachments/assets/dd628b40-5a54-4c04-9470-3ce989c3b048" />
+<img width="396" height="864" alt="image" src="https://github.com/user-attachments/assets/fa978d3d-8c58-429c-a4d6-c505b1d773af" />
+
 
 ## Fitur
 
