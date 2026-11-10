@@ -90,6 +90,7 @@ Nilai turunan (daftar hasil filter, data halaman aktif) dihitung dari state yang
 - **Card:** gambar memakai URL yang dibuat dari ID. Tipe dan BST pada card diambil per card lewat `/pokemon/{id}` (di-cache TanStack Query), jadi ada sekitar 20 request per halaman pada kunjungan pertama.
 - **Dropdown buatan sendiri:** tampilan konsisten dan dukungan keyboard dan ARIA, tanpa library UI tambahan.
 - **Layer API terpisah:** semua pemanggilan axios ada di `src/api`, hook hanya membungkusnya dengan TanStack Query.
+- **Axios** dipakai karena mendukung instance dengan base URL dan respons bertipe (generic), sehingga pemanggilan API rapi dan type-safe.
 
 ## Batasan dan Pengembangan Lanjutan
 
