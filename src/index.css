@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f4f1ea;
+  color: #2c2c2c;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-poke-spin {
+  animation: spin-slow 1s linear infinite;
+}
